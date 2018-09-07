@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		319CA6D2213E83B7003E5D27 /* KCGameLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 319CA6D0213E83B7003E5D27 /* KCGameLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		31BE7E5C21422467005CB1AB /* GameLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31BE7E5B21422467005CB1AB /* GameLabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		319CA6CD213E83B7003E5D27 /* KCGameLabel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KCGameLabel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		319CA6D0213E83B7003E5D27 /* KCGameLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KCGameLabel.h; sourceTree = "<group>"; };
 		319CA6D1213E83B7003E5D27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		31BE7E5B21422467005CB1AB /* GameLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,7 @@
 			children = (
 				319CA6D0213E83B7003E5D27 /* KCGameLabel.h */,
 				319CA6D1213E83B7003E5D27 /* Info.plist */,
+				31BE7E5B21422467005CB1AB /* GameLabel.swift */,
 			);
 			path = KCGameLabel;
 			sourceTree = "<group>";
@@ -95,6 +98,7 @@
 				TargetAttributes = {
 					319CA6CC213E83B7003E5D27 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
 					};
 				};
 			};
@@ -130,6 +134,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31BE7E5C21422467005CB1AB /* GameLabel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +264,7 @@
 		319CA6D6213E83B7003E5D27 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -268,6 +274,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = KCGameLabel/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -276,6 +283,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.keeleysoft.KCGameLabel;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -284,6 +292,7 @@
 		319CA6D7213E83B7003E5D27 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -293,6 +302,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = KCGameLabel/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
